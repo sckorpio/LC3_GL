@@ -1,0 +1,23 @@
+kerneldev.pro.user
+*.autosave
+demo.*
+*generated*
+*.user
+*Makefile
+lcdemo*
+*.so
+.idea
+build
+release
+CMakeLists.txt.user
+playground
+xcode
+debug
+doc
+lckernel/version.cpp
+cmake-build-debug
+unittest/rendering/res/*.out
+
+# macOS
+.DS_Store
+.vscode
