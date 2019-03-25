@@ -60,7 +60,12 @@ void GL_Entity::ClearData()
 
 }
 
-void Delete()
+void GL_Entity::Delete()
 {
-	
+  
+  VBO.~VertexBuffer();
+  IBO.~IndexBuffer();
+  VAO.~VertexArray();
+
+  this->~GL_Entity();
 }
