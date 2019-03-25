@@ -101,6 +101,9 @@ void Renderer::Use_GL_Entity(unsigned int id)
 
 void Renderer::Add_New_GL_Entity()
 {
+	if(current_gl_entity!=NULL)
+	current_gl_entity->Delete();
+
 	current_gl_entity = new GL_Entity();
 }
 
